@@ -1,0 +1,12 @@
+{
+  "name": "emg-it-corporate-training-llc",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "build": "python export_static.py",
+    "deploy": "npm run build && npx wrangler deploy"
+  },
+  "devDependencies": {
+    "wrangler": "^4.110.0"
+  }
+}

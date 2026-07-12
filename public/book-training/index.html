@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Book Training</title>
+    <meta name="description" content="EMG IT Corporate Training LLC offers corporate IT training, computer sales, repairs, and support services.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/css/styles.css">
+  </head>
+  <body>
+    <nav class="site-nav">
+      <div class="container nav-inner">
+        <a class="brand" href="/">
+          <img src="/static/images/Logo.png" alt="EMG IT Corporate Training LLC logo" style="height: 48px; width: auto; display: block;">
+        </a>
+        <div class="nav-links">
+          <a href="/training-programs">Training Programs</a>
+          <a href="/corporate-training">Corporate Training</a>
+          <a href="/computer-sales">Computer Sales</a>
+          <a href="/computer-repairs">Computer Repairs</a>
+          <a href="/book-training">Book Training</a>
+          <a href="/gallery">Gallery</a>
+          <a href="/contact">Contact</a>
+          
+            <a href="/login">Login</a>
+            <a href="/register">Register</a>
+          
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      
+        
+      
+      
+<section class="section">
+  <div class="container">
+    <div class="form-card">
+      <h1 class="section-title">Book Training</h1>
+      <p class="section-intro">Request a class, select a date and time, and our team will confirm the booking.</p>
+      <form method="post">
+        <input id="csrf_token" name="csrf_token" type="hidden" value="IjU4OGQyYjUxOGEzZGRlZDYxYjFiODQ3MDUwNjA0MGVmMjQzNTZhMTUi.alOMcg.hTW2wVsRMhAM3xxsrhoZU8Nl4aU">
+        <div class="form-group">
+          <label><label for="course_title">Training Program</label></label>
+          <select id="course_title" name="course_title" required><option value="Information Technology">Information Technology</option><option value="Networking">Networking</option><option value="Cybersecurity">Cybersecurity</option><option value="Microsoft Office">Microsoft Office</option><option value="Cloud Computing">Cloud Computing</option></select>
+        </div>
+        <div class="form-group">
+          <label><label for="trainer">Preferred Instructor</label></label>
+          <input id="trainer" name="trainer" type="text" value="">
+        </div>
+        <div class="form-group">
+          <label><label for="booking_date">Preferred Date</label></label>
+          <input id="booking_date" name="booking_date" required type="text" value="">
+        </div>
+        <div class="form-group">
+          <label><label for="booking_time">Preferred Time</label></label>
+          <input id="booking_time" name="booking_time" required type="text" value="">
+        </div>
+        <div class="form-group">
+          <label><label for="training_type">Training Type</label></label>
+          <select id="training_type" name="training_type" required><option value="Online">Online</option><option value="On-site">On-site</option></select>
+        </div>
+        <div class="form-group">
+          <label><label for="notes">Additional Details</label></label>
+          <textarea id="notes" name="notes" rows="5">
+</textarea>
+        </div>
+        <button class="btn btn-primary" type="submit">Request Booking</button>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-column">
+            <h3>Address</h3>
+            <p>390 NW Burnside Rd<br>Gresham, Oregon 97030</p>
+          </div>
+          <div class="footer-column">
+            <h3>Quick</h3>
+            <p><a href="/training-programs">Programs</a><br><a href="/blog">Blog</a><br><a href="/faq">FAQ</a></p>
+          </div>
+          <div class="footer-column">
+            <h3>Contact</h3>
+            <p>903-296-4880<br>emgitcorporatetraining@hotmail.com</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <button id="back-to-top" style="display:none;position:fixed;right:1rem;bottom:1rem;padding:0.9rem 1rem;border-radius:999px;background:var(--blue);color:white;border:none;cursor:pointer;">↑</button>
+    <script src="/static/js/main.js"></script>
+  </body>
+</html>

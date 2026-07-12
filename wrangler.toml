@@ -1,0 +1,5 @@
+name = "emg-it-corporate-training-llc"
+type = "javascript"
+
+[site]
+  bucket = "./public"
