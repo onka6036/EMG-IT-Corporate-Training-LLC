@@ -6,7 +6,7 @@ This project is a production-ready Flask web application for EMG IT Corporate Tr
 ## Features
 - Responsive modern corporate website
 - Flask login and registration
-- SQLite database with Flask-SQLAlchemy
+-- No database: app has been converted to use in-memory fixtures for static/export mode
 - Training booking workflow
 - Admin dashboard for bookings and contact messages
 - SEO-friendly page structure

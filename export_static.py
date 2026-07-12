@@ -2,7 +2,7 @@ import os
 from pathlib import Path
 
 from app import app
-from models import BlogPost
+from data import BLOG_POSTS
 
 BASE_DIR = Path(__file__).resolve().parent
 PUBLIC_DIR = BASE_DIR / "public"
@@ -81,8 +81,8 @@ def save_sitemap_and_robots() -> None:
 
 
 def get_blog_routes() -> list[str]:
-    with app.app_context():
-        posts = BlogPost.query.filter_by(published=True).all()
+    # Use in-memory blog posts since the DB has been removed
+    posts = [p for p in BLOG_POSTS if getattr(p, 'published', False)]
     return [f"/blog/{post.slug}" for post in posts]
 
 
